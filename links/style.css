@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body {
+  /* これからこれに統一する */
+  font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+
+.container {
+  width: 600px;
+  height: 100%;
+  padding: 10px;
+  margin: 0 auto; }
+  .container div {
+    margin-bottom: 40px; }
+
+/* slowly_change */
+.slowly_change a {
+  color: #F55050;
+  text-decoration: none;
+  transition: .3s; }
+  .slowly_change a:hover {
+    color: #289DCC; }
+
+/* slowly_change_2 */
+.slowly_change_2 a {
+  color: #F55050;
+  text-decoration: none;
+  position: relative;
+  padding: 4px;
+  transition: .3s; }
+  .slowly_change_2 a:hover {
+    background: #F55050;
+    color: #fff;
+    border-radius: 4px; }
+
+/* underline */
+.underline a {
+  color: #F55050;
+  text-decoration: none;
+  position: relative; }
+  .underline a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: .3s;
+    opacity: 0; }
+  .underline a:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #F55050;
+    transition: .3s;
+    opacity: 1;
+    transform: scaleX(1); }
+
+/* withTooltip */
+.with_tooltip a {
+  position: relative;
+  color: #F55050;
+  text-decoration: none;
+  transition: .3s; }
+  .with_tooltip a:after {
+    content: "リンク先：" attr(href);
+    position: absolute;
+    top: -2em;
+    left: 0;
+    margin: 0 auto;
+    padding: 4px 6px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-family: Verdana,sans-serif;
+    white-space: nowrap;
+    transition: .3s;
+    transform: scaleY(0); }
+  .with_tooltip a:hover {
+    color: #289DCC; }
+    .with_tooltip a:hover:after {
+      transform: scale(1); }
+
+/*# sourceMappingURL=style.css.map */
