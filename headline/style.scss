@@ -1,0 +1,194 @@
+body {
+    /* これからこれに統一する */
+    font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+.container {
+    width: 600px;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    div {
+        margin-bottom: 40px;
+    }
+}
+
+/* square_wheel */
+.square_wheel h1{
+    color: #444;
+    font-size: 24px;
+    position: relative;
+    padding: 0 0 2px 32px;
+    border-bottom: 1px solid #888;
+    &:before, &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #d14;
+        margin: auto;
+    }
+    &:before{
+        top: -6px;
+        left: 0px;
+    }
+    &:after{
+        top: 6px;
+        left: 6px;
+    }
+}
+
+/* square_wheel_2 */
+.square_wheel_2 h1 {
+    position: relative;
+    color: #111;
+    font-size: 1.143em;
+    font-weight: bold;
+    margin: 0 0 1.5em;
+    padding: 0.5em 0.5em 0.5em 1.7em;
+    border-bottom: 3px solid #B92A2C;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+    }
+    &:before {
+        background: #d48789;
+        top: 0;
+        left: 0.4em;
+        height: 12px;
+        width: 12px;
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+    }
+    &:after {
+        background:#d26466;
+        top: 1.0em;
+        left: 0;
+        height: 8px;
+        width: 8px;
+        transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+    }
+}
+
+/* double_circle */
+.double_circle h1 {
+    position: relative;
+    color: #111;
+    background: #ccc;
+    font-size: 20px;
+    line-height: 1;
+    margin: 30px 0 10px 0;
+    padding: 14px 5px 10px 40px;
+    box-shadow: 0 1px 3px #777;
+    border-radius: 0 10px 10px 0;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+    &:before {
+        background: #999;
+        top: 50%;
+        left: -20px;
+        margin-top :-22px;
+        height: 44px;
+        width: 44px;
+        box-shadow: 1px 1px 1px #777;
+    }
+    &:after {
+        background:#777;
+        top: 50%;
+        left: -15px;
+        margin-top:-15px;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+/* American_balloon */
+.American_balloon h1{
+    position:relative;
+    padding:5px 20px;
+    font:bold 28px/1.6 Arial, Helvetica, sans-serif;
+    color:#333;
+    background:#fff;
+    text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;
+    border-top:#333 solid 3px;
+    border-bottom:#333 solid 3px;
+    background-image: -webkit-gradient(linear, left top, right bottom,
+            from(           rgba(255, 255, 255, 0.0)),
+            color-stop(0.4, rgba(255, 255, 255, 0.0)),
+            color-stop(0.4, rgba(0, 0, 0, 0.1)),
+            color-stop(0.6, rgba(0, 0, 0, 0.1)),
+            color-stop(0.6, rgba(255, 255, 255, 0.0)),
+            to(             rgba(255, 255, 255, 0.0))
+            );
+    background-image: -webkit-linear-gradient(top -45deg,
+            transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+            );
+    background-image: -moz-linear-gradient(top -45deg,
+            transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+            );
+    background-image: -o-linear-gradient(top -45deg,
+            transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+            );
+    background-image: linear-gradient(to bottom -45deg,
+            transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+            );
+    background-size:4px 4px;
+    &:before {
+        content:" ";
+        position:absolute;
+        top:100%;
+        left:24px;
+        width:0;
+        height:0;
+        border-width:12px;
+        border-style:solid;
+        border-color:transparent;
+        border-top-color:#333;
+    }
+    &:after {
+        content:" ";
+        position:absolute;
+        top:100%;
+        left:28px;
+        width:0;
+        height:0;
+        border-width:8px;
+        border-style:solid;
+        border-color:transparent;
+        border-top-color:#f0f0f0;
+        z-index:1;
+    }
+}
+
+/* first_letter_bigger */
+.first_letter_bigger h1{
+    color: #444;
+    font-size: 24px;
+    line-height: 1.6em;
+    border-bottom: 1px solid #bfbfbf;
+    &:first-letter{
+        font-size: 48px;
+    }
+}
